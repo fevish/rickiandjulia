@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, shrink-to-fit=no">
+
+        <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+        <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+        <meta name="author" content=" ">
+        <meta name="google-site-verification" content=" " />
+
+        <!-- OG META Tags -->
+
+        {% if page.title %}
+        <meta content="{{ page.title }}" property="og:title" />
+        {% else %}
+        <meta content="{{ site.title }}" property="og:title" />
+        {% endif %}
+
+        <meta property="og:type" content="website" />
+        <meta property="fb:app_id" content=""/>
+
+        <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
+        <meta property="og:site_name" content="{{ site.title }}" />
+        <meta property="og:locale" content="en_US" />
+
+        {% if page.image %}
+        <meta property="og:image" content="{{ site.url }}{{ page.image }}" />
+        <meta name="twitter:image" content="{{ site.url }}{{ page.image }}" />
+        {% elsif page.ximage %}
+        <meta property="og:image" content="{{ page.ximage }}" />
+        <meta name="twitter:image" content="{{ page.ximage }}" />
+        {% else %}
+        <meta property="og:image" content="{{ site.url }}/assets/images/logo.jpg"/>
+        <meta name="twitter:image" content="{{ site.url }}/assets/images/logo.jpg"/>
+        {% endif %}
+
+        <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+        <meta name="twitter:card" content="summary_large_image">
+        <!--  Non-Essential, But Recommended -->
+        <meta name="twitter:image:alt" content="" />
+
+        <!-- CSS and Scripts -->
+
+        <link rel="stylesheet" href="{{ site.baseurl }}/assets/stylesheets/main.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  
+        <!-- Loading -->
+        <script src="{{ site.baseurl }}assets/js/plugins/pace.min.js"></script>
+
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
