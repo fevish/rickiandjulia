@@ -4,4 +4,19 @@ $baseurl: '{{ site.baseurl }}';
 @import "variables";
 @import "style-02";
 @import "css/bootstrap.min.css";
-@import "css/style-02.css";
+
+// Responisve iframe google map
+.map-responsive{
+    margin-top: 100px;
+    overflow:hidden;
+    padding-bottom:70%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
