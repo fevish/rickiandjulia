@@ -561,6 +561,31 @@ button:focus {
   :-ms-input-placeholder {
     text-align: center;
   }
+  .form-inline {
+      display:inline-block;
+  }
+  .form-group {
+      margin-bottom: 5px;
+  }
+  .form-select {
+      margin-bottom: 5px;
+  }
+  .custom-select {
+      border-radius: 0;
+      font-size: 1.3em;
+      position: relative;
+      background: #fff url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTIgMjFsLTEyLTE4aDI0eiIvPjwvc3ZnPg==") no-repeat right .55rem center;
+      background-size: 7px;
+  }
+  .plates {
+      display: inline-block;
+      max-width: 100%;
+      padding: 15px;
+      line-height: 1.25;
+      color: #495057;
+      vertical-align: middle;
+      font-size: 1.5em;
+  }
 }
 
 footer {
@@ -789,6 +814,10 @@ footer {
     }
     .form-inline {
       display:block;
+    }
+    .custom-select {
+        width: 100%;
+        margin-bottom: 10px;
     }
   }
 }

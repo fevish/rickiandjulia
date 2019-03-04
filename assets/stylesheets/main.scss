@@ -1,9 +1,9 @@
 ---
 ---
 $baseurl: '{{ site.baseurl }}';
+@import "css/bootstrap.min.css";
 @import "variables";
 @import "style-02";
-@import "css/bootstrap.min.css";
 
 // Responisve iframe google map
 .map-responsive{
@@ -19,4 +19,8 @@ $baseurl: '{{ site.baseurl }}';
     height:100%;
     width:100%;
     position:absolute;
+}
+
+a:hover {
+    text-decoration-color: #a2c5c6;
 }
