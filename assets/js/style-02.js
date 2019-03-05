@@ -42,29 +42,6 @@ $(window).scroll(function() {
 
 });
 
-//SAVE TO CSV
-$(function() {
-    $(".submit").click(function() {
-        var name = $("#name").val();
-        var dataString = 'name=' + name;
-
-        if (name == '') {
-            $('.alert-danger').fadeIn().show();
-        } else {
-            $.ajax({
-                type: "POST",
-                url: "rsvp.php",
-                data: dataString,
-                success: function() {
-                    $('.alert-danger').fadeIn().hide();
-                    $('.alert-success').fadeIn().fadeOut(3000);
-                }
-            });
-        }
-        return false;
-    });
-});
-
 //SCROLLREVEAL
 window.sr = ScrollReveal();
 sr.reveal('#home .caption', {
