@@ -9,7 +9,7 @@
  */
 
 // COLOR
-$primary-color: #a2c5c6;
+$primary-color: #00999e;
 
 // IMPORT FONTS
 @import url(https://fonts.googleapis.com/css?family=Varela+Round);
@@ -331,7 +331,7 @@ button:focus {
 .wedding-02 {
   padding: 120px 0;
 
-  background: lighten($primary-color, 20%);
+  background: lighten($primary-color, 65%);
   img {
     display: inline-block;
 
@@ -442,7 +442,7 @@ button:focus {
 .registry-02 {
   padding: 120px 0 160px;
 
-  background: $primary-color;
+  background: darken($primary-color, 4%);
   h3 {
     font-family: 'Varela Round', sans-serif;
     font-size: 3em;
@@ -460,12 +460,12 @@ button:focus {
       line-height: 28px;
       margin-bottom: 40px;
       letter-spacing: 1px;
-      color: #828282;
+      color: #1a1a1a;
+      font-weight: 600;
   }
   img {
     display: inline-block;
-
-    max-width: 225px;
+    max-width: 325px;
     max-height: 120%;
   }
   a {
