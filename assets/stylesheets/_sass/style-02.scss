@@ -385,6 +385,25 @@ button:focus {
   }
 }
 
+.received {
+  .btn-default {
+    margin-top: 20px;
+    padding: 10px 25px;
+
+    letter-spacing: 3px;
+
+    color: #fff;
+    border: 1px solid $primary-color;
+    border-radius: 0;
+    background: $primary-color;
+  }
+  .btn-default:hover {
+    color: $primary-color;
+    border: 1px solid $primary-color;
+    background: transparent;
+  }
+  }
+
 /*
   #########################################################################
   #
