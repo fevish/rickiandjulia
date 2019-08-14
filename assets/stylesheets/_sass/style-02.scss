@@ -332,6 +332,13 @@ button:focus {
   padding: 120px 0;
 
   background: lighten($primary-color, 65%);
+
+  .parking img {
+    display: inline-block;
+
+    max-width: 1000px;
+  }
+
   img {
     display: inline-block;
 
