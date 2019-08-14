@@ -333,10 +333,11 @@ button:focus {
 
   background: lighten($primary-color, 65%);
 
-  .parking img {
-    display: inline-block;
-
-    max-width: 1000px;
+  .parking  {
+    img {
+      display: inline-block;
+      max-width: 1000px;
+    }
   }
 
   img {
